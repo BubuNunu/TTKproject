@@ -44,3 +44,11 @@
  ./scripts/cloneTTKmodule.sh DepthImageBasedGeometryApproximation GraphRefinement
  </pre>
  
+ #### 4. write the PA, VTK, TTK
+ <pre>
+ //UI
+ paraview -> GraphRefinement -> GraphRefinement.xml
+ //VTK, input, output(content is empty at the beginning)
+ core -> vtk -> ttkGraphRefinement -> ttkGraphRefinement.h and ttkGraphRefinement.cpp
+ </pre>
+ 
