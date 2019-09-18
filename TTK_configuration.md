@@ -88,9 +88,9 @@
     // write the code to do something
     core/base/EventDataConverter.cpp
     </pre>
-    
-    
-    
+ #### 8. use the independent c++ code to debug the changes generated in the core.
+    - standalone/GenericScript/CMakeLists.txt. add your module to the project name
+    - standalone/GenericScript/main.cpp. manully write the sequence of module to operate. 
     
     
     
