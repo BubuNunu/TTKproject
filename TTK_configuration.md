@@ -52,3 +52,47 @@
  core -> vtk -> ttkGraphRefinement -> ttkGraphRefinement.h and ttkGraphRefinement.cpp
  </pre>
  
+ ////////The above process is used for paraview version 5.6.1, the below notes are used for paraview version 5.7.0
+ #### 5. start paraview server
+ <pre>
+ // after cloning the new version of ttk under the build folder in my server,
+ // build the new ttk under "build" folder, for some reason, it make ccmake twice to work
+ ccmake ..
+ make -j35 install
+ // Now my ttk should be deployed into J's server paraview. 
+ // To simplify the operation for starting the server paraview. add alias " startParaViewServer" in bashrc 
+ nano ~/.bashrc
+ startParaViewServer
+ </pre>
+ 
+ #### 6. clone others to write my own module
+ <pre>
+ // clone the existing one "HelloWorld" to learn.
+ ./scripts/cloneTTKmodule.sh HelloWorld EventDataConverter
+ </pre>
+ 
+ #### 7. proceess to write my own model
+ - write paraview first. eg: paraview/EventDataConverter/EventDataConverter.xml
+ - wirte core(VTK and TTk)
+    - VTK first.  
+    <pre>
+    //receive the parameter from the local paraview 
+    core/vtk/ttkEventDataConverter/ttkEventDataConverter.h
+    // input and output of vtk, send data to the functions implemented in TTK
+    core/vtk/ttkEventDataConverter/ttkEventDataConverter.cpp
+    </pre>
+    - TTK
+    <pre>
+    //namesspace "ttk", define functions which will be implemented in cpp
+    core/base/EventDataConverter.h
+    // write the code to do something
+    core/base/EventDataConverter.cpp
+    </pre>
+    
+    
+    
+    
+    
+    
+    
+    
