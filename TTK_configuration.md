@@ -92,6 +92,14 @@
  #### 8. use the independent c++ code to debug the changes generated in the core.
  - standalone/GenericScript/CMakeLists.txt. add your module to the project name
  - standalone/GenericScript/main.cpp. manully write the sequence of module to operate. 
+ 
+ #### 9. build my code and run it for debug
+ <pre>
+ //under built folder. Whent he options appear, turn on the TTK_BUILD_STandalone_apps
+ ccmake ..
+ make -j35 install
+ ./standalone/GenericScript/cmd/ttkGenericScriptCmd 
+ </pre>
     
     
     
