@@ -114,6 +114,6 @@
  </pre>
  
  #### 11. check the point using paraview
- open the data folder then call 
+ open the data folder then call "TTK SphereFromPoint"
     
     
