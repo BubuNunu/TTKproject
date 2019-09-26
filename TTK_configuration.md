@@ -101,7 +101,19 @@
  ./standalone/GenericScript/cmd/ttkGenericScriptCmd 
  </pre>
     
-    
-    
+ #### 10. push the new work to road branch
+ <pre>
+ // add folders or files
+ git add nameofmaterials
+ // commit
+ git commit -a
+ // the material list, edit the commit
+ eg: eventDataconverter + RoadDataConverter
+ // press ctrl+O to write out, then exit. Finally to push the materials
+ git push original road
+ </pre>
+ 
+ #### 11. check the point using paraview
+ open the data folder then call 
     
     
