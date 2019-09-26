@@ -114,6 +114,6 @@
  </pre>
  
  #### 11. check the point using paraview
- open the data folder then call "TTK SphereFromPoint"
+ out the point data rathen then the cell of point. open the data folder then call "TTK SphereFromPoint"
     
     
