@@ -116,4 +116,13 @@
  #### 11. check the point using paraview
  out the point data rathen then the cell of point. open the data folder then call "TTK SphereFromPoint"
     
-    
+ #### 12. send paparmeter between fundction in vtk and ttk(base)
+ You can't send the vtkunstructedGrid data type to ttk. You have to split the data to point and connectivitis using 
+ <pre>
+ input->GetPoints()->GetVoidPointer(0)); //get the points
+ input->GetCells()->GetPointer(); //get the head of cells
+ // get #points, #edges
+ input->GetNumberOfPoints();
+ input->GetNumberOfCells();
+ </pre>
+ 
