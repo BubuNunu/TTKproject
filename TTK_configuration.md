@@ -128,3 +128,20 @@
  input->GetNumberOfCells();
  </pre>
  
+ 
+ #### 13. add property or file to grid data
+ <pre>
+ // if the data type is integer, this example uses unsigned char 
+  auto categoryIndex = vtkSmartPointer<vtkUnsignedCharArray>::New();
+  categoryIndex->SetName("CategoryIndex"); // except point and cell, for other datatype created by vtkSmartPointer have to contain ths line to name it. 
+  categoryIndex->SetNumberOfComponents(1); // how many postions to store for one componets, such as cell need 3 for one component.
+  categoryIndex->SetNumberOfTuples(nPoints); 
+  // then send the categoryIndex to parseCoords function for assigning value to the property
+  // at the end, add the property to the output, actually  the point data in the example
+  output->GetPointData()->AddArray(categoryIndex);
+ </pre>
+ <pre>
+ // If you would like to add a file to the whole data, not just add property to the point of the grid data. For example, create a dictionary to loopup. Then attach it to the whole grid data structure.
+ std::vector<string> categoryDictionary;
+ output->GetFieldData()->AddArray(categoryDictionaryArray);
+ </pre>
