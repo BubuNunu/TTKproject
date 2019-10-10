@@ -67,7 +67,7 @@
  
  #### 6. clone others to write my own module
  <pre>
- // clone the existing one "HelloWorld" to learn.
+ // clone the existing one "HelloWorld" to learn. under "ttk-tukl" folder.
  ./scripts/cloneTTKmodule.sh HelloWorld EventDataConverter
  </pre>
  
