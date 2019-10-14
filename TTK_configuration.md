@@ -145,3 +145,35 @@
  std::vector<string> categoryDictionary;
  output->GetFieldData()->AddArray(categoryDictionaryArray);
  </pre>
+
+ #### 14. configuration
+ <pre>
+                                                      Page 1 of 2
+ BUILD_SHARED_LIBS                ON                                                                                                                                                                   
+ CMAKE_BUILD_TYPE                 Release                                                                                                                                                              
+ CMAKE_INSTALL_PREFIX             /home/local/ASUAD/rzhan100/ttk-tukl/install                                                                                                                          
+ Eigen3_DIR                       /usr/lib/cmake/eigen3                                                                                                                                                
+ GRAPHVIZ_CDT_LIBRARY             /usr/lib/libcdt.so                                                                                                                                                   
+ GRAPHVIZ_CGRAPH_LIBRARY          /usr/lib/libcgraph.so                                                                                                                                                
+ GRAPHVIZ_GVC_LIBRARY             /usr/lib/libgvc.so                                                                                                                                                   
+ GRAPHVIZ_INCLUDE_DIR             /usr/include                                                                                                                                                         
+ GRAPHVIZ_PATHPLAN_LIBRARY        /usr/lib/libpathplan.so                                                                                                                                              
+ PARAVIEW_PLUGIN_ENABLE_Topolog   ON                                                                                                                                                                   
+ ParaView_DIR                     /home/local/ASUAD/jlukascy/ParaView-v5.7/install/lib/cmake/paraview-5.7                                                                                              
+ TTK_BUILD_DOCUMENTATION          OFF                                                                                                                                                                  
+ TTK_BUILD_PARAVIEW_PLUGINS       ON                                                                                                                                                                   
+ TTK_BUILD_STANDALONE_APPS        ON     
+ 
+  TTK_BUILD_VTK_WRAPPERS           ON                                                                                                                                                                   
+ TTK_ENABLE_EIGEN                 ON                                                                                                                                                                   
+ TTK_ENABLE_GRAPHVIZ              ON                                                                                                                                                                   
+ TTK_ENABLE_MPI                   OFF                                                                                                                                                                  
+ TTK_ENABLE_OPENMP                ON                                                                                                                                                                   
+ TTK_ENABLE_SQLITE3               ON                                                                                                                                                                   
+ TTK_ENABLE_ZFP                   OFF                                                                                                                                                                  
+ TTK_ENABLE_ZLIB                  ON                                                                                                                                                                   
+ VTK_DIR                          /home/local/ASUAD/jlukascy/ParaView-v5.7/install/lib/cmake/paraview-5.7/vtk                                                                                          
+ VTKm_DIR                         /home/local/ASUAD/jlukascy/ParaView-v5.7/install/lib/cmake/paraview-5.7/vtk/vtkm                                                                                     
+ ZFP_DIR                          ZFP_DIR-NOTFOUND    
+ 
+ </pre>
