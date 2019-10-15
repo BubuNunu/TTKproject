@@ -165,8 +165,8 @@
  TTK_BUILD_STANDALONE_APPS        ON     
  
   TTK_BUILD_VTK_WRAPPERS           ON                                                                                                                                                                   
- TTK_ENABLE_EIGEN                 ON                                                                                                                                                                   
- TTK_ENABLE_GRAPHVIZ              ON                                                                                                                                                                   
+ TTK_ENABLE_EIGEN                 OFF                                                                                                                                                                   
+ TTK_ENABLE_GRAPHVIZ              OFF                                                                                                                                                                   
  TTK_ENABLE_MPI                   OFF                                                                                                                                                                  
  TTK_ENABLE_OPENMP                ON                                                                                                                                                                   
  TTK_ENABLE_SQLITE3               ON                                                                                                                                                                   
