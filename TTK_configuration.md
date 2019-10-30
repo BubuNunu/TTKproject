@@ -183,4 +183,7 @@
  - static <b> inline </b> functionName. when other place to call the function, it actually copyed the content of the function to that place to run, rather then send object flightly, save the memory and speed up.
  - for a variable, for example it is an interger, when you call it in some function. use <pre>int &variableName </pre>. The system will not to create a new memory to the reference. just use the content. save memory
  
+#### 16. write helper function in ttk
+put your helper function inside public. Then ttk::moduleName::functionanme to call it. inside the file or in other module.
+When you call it in other module, you have to include the header and add the module in the CMakeLists.txt to the link part. 
  
