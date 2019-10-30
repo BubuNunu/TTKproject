@@ -177,3 +177,10 @@
  ZFP_DIR                          ZFP_DIR-NOTFOUND    
  
  </pre>
+ 
+ 
+ #### 15. c++ optimization
+ - static <b> inline </b> functionName. when other place to call the function, it actually copyed the content of the function to that place to run, rather then send object flightly, save the memory and speed up.
+ - for a variable, for example it is an interger, when you call it in some function. use <pre>int &variableName </pre>. The system will not to create a new memory to the reference. just use the content. save memory
+ 
+ 
