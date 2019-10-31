@@ -187,3 +187,10 @@
 put your helper function inside public. Then ttk::moduleName::functionanme to call it. inside the file or in other module.
 When you call it in other module, you have to include the header and add the module in the CMakeLists.txt to the link part. 
  
+#### 17. write parallel computing  in ttk
+write clean and independent for loop,then just add the following lines above them. It's very easy but powerful.
+<pre>
+  #ifdef TTK_ENABLE_OPENMP
+  #pragma omp parallel for num_threads(threadNumber_)
+  #endif
+</pre>
