@@ -109,7 +109,7 @@
  git commit -a
  // the material list, edit the commit
  eg: eventDataconverter + RoadDataConverter
- // press ctrl+O to write out, then exit. Finally to push the materials
+ // press ctrl+O to write out, then exit(wq). Finally to push the materials
  git push origin road
  //username :rzhan100@asu.edu
  //code : raytao2528
