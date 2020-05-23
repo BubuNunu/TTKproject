@@ -194,3 +194,29 @@ write clean and independent for loop,then just add the following lines above the
   #pragma omp parallel for num_threads(threadNumber_)
   #endif
 </pre>
+
+#### 18: install paraview and ttk in my local computer(macOS):
+<pre>
+/ clone and enter repo
+git clone https://github.com/Kitware/ParaView paraview
+cd paraview
+// checkout version 5.7.0
+git checkout v5.7.0
+// pull all submodules
+git submodule update --init --recursive
+// create and enter build folder
+mkdir build
+cd build
+// configure build
+ccmake ..
+set the following options:
+CMAKE_INSTALL_PREFIX = pathToYourParaViewRepo/install
+CMAKE_BUILD_TYPE=Release
+PARAVIEW_ENABLE_PYTHON=ON
+PARAVIEW_PYTHON_VERSION=3
+PARAVIEW_INSTALL_DEVELOPMENT_FILES=ON
+(some options are only visible in the advanced mode)
+// build and install with N cores
+make -jN install
+
+</pre>
