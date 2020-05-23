@@ -196,6 +196,7 @@ write clean and independent for loop,then just add the following lines above the
 </pre>
 
 #### 18: install paraview and ttk in my local computer(macOS):
+###### install paraview
 <pre>
 // clone and enter repo
 git clone https://github.com/Kitware/ParaView paraview
@@ -219,5 +220,21 @@ PARAVIEW_INSTALL_DEVELOPMENT_FILES=ON
 // build and install with N cores.
 /************* Notice!: in macos, you have to change python 3.8.0 to other version, like python 3.7.7. otherwise, the you can build successfully **********/
 make -jN install
-
 </pre>
+ ###### install ttk
+ <pre>
+ // clone and enter ttk repo
+git clone https://priest.informatik.uni-kl.de/git/lukasczyk/ttk-tukl ttk-tukl
+cd ttk-tukl
+// checkout your branch
+git checkout road
+// create and enter build folder
+mkdir build
+cd build
+// configure build
+ccmake ..
+set the following options:
+CMAKE_INSTALL_PREFIX = pathToYourTTKRepo/install
+ParaView_DIR = pathToYourParaViewRepo/install/lib/cmake/paraview-5.7
+Qt5_DIR = 
+ </pre>
