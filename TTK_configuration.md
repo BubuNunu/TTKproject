@@ -197,7 +197,7 @@ write clean and independent for loop,then just add the following lines above the
 
 #### 18: install paraview and ttk in my local computer(macOS):
 <pre>
-/ clone and enter repo
+// clone and enter repo
 git clone https://github.com/Kitware/ParaView paraview
 cd paraview
 // checkout version 5.7.0
@@ -208,15 +208,16 @@ git submodule update --init --recursive
 mkdir build
 cd build
 // configure build
-ccmake ..
+ccmake .. // install cmake-gui, cmake-gui .. can show the UI to set the configuration.
 set the following options:
 CMAKE_INSTALL_PREFIX = pathToYourParaViewRepo/install
 CMAKE_BUILD_TYPE=Release
 PARAVIEW_ENABLE_PYTHON=ON
 PARAVIEW_PYTHON_VERSION=3
 PARAVIEW_INSTALL_DEVELOPMENT_FILES=ON
-(some options are only visible in the advanced mode)
-// build and install with N cores
+(some options are only visible in the advanced mode, press 't' to display the advanced mode.)
+// build and install with N cores.
+/************* Notice!: in macos, you have to change python 3.8.0 to other version, like python 3.7.7. otherwise, the you can build successfully **********/
 make -jN install
 
 </pre>
