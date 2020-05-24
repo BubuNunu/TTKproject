@@ -237,4 +237,5 @@ set the following options:
 CMAKE_INSTALL_PREFIX = pathToYourTTKRepo/install
 ParaView_DIR = pathToYourParaViewRepo/install/lib/cmake/paraview-5.7
 Qt5_DIR = 
+Python3 = e
  </pre>
