@@ -27,14 +27,27 @@ dpkg -L qt5-default
 sudo apt-get -y install cmake
 sudo apt-get -y install cmake-qt-gui
 </pre>
-5. install python
+5. install pyenv
 <pre>
+curl https://pyenv.run | bash
+//copy the content  to ~/.bashrc, save
+source ~/.bashrc
+</pre>
+6. install python
+<pre>
+//// the way to install python will causet the confustion of the different versions.
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.7
 python ––version
+//// correct way to install and mange python version
+sudo apt-get install zlib1g-dev
+// check which version can be installed 
+pyenv install --list
+//install python version
+pyenv install 3.7.4
 </pre>
 
 ## install paraview
