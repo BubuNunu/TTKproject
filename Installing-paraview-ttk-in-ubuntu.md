@@ -1,4 +1,8 @@
 ## preparation
+0. install office link of paraview: https://github.com/Kitware/ParaView/blob/master/Documentation/dev/build.md
+<pre>
+sudo apt-get install git cmake build-essential libgl1-mesa-dev libxt-dev qt5-default libqt5x11extras5-dev libqt5help5 qttools5-dev qtxmlpatterns5-dev-tools libqt5svg5-dev python3.7-dev python3-numpy libopenmpi-dev libtbb-dev ninja-build
+</pre>
 1. install git:
 <pre>
 // install git
