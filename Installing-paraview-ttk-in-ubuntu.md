@@ -27,6 +27,15 @@ dpkg -L qt5-default
 sudo apt-get -y install cmake
 sudo apt-get -y install cmake-qt-gui
 </pre>
+5. install python
+<pre>
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.7
+python ––version
+</pre>
 
 ## install paraview
 <pre>
