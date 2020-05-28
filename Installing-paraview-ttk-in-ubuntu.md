@@ -25,7 +25,6 @@ dpkg -L qt5-default
 4. install cmake
 <pre>
 sudo apt-get -y install cmake
-//install gui of cmake
 sudo apt-get -y install cmake-qt-gui
 </pre>
 
