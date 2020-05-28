@@ -43,11 +43,18 @@ sudo apt update
 sudo apt install python3.7
 python ––version
 //// correct way to install and mange python version
+// add some related packages if the system does not have
 sudo apt-get install zlib1g-dev
+sudo apt-get update
+sudo apt-get install build-essential libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
 // check which version can be installed 
 pyenv install --list
 //install python version
 pyenv install 3.7.4
+// change the default version of python in the system
+pyenv global 3.7.4
+// check the default version
+pyenv versions
 </pre>
 
 ## install paraview
