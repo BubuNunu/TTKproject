@@ -86,3 +86,36 @@ PARAVIEW_INSTALL_DEVELOPMENT_FILES=ON
 /************* Notice!: in macos, you have to change python 3.8.0 to other version, like python 3.7.7. otherwise, the you can build successfully **********/
 make -jN install
 </pre>
+## install paraview
+<pre>
+// clone and enter ttk repo
+git clone https://priest.informatik.uni-kl.de/git/lukasczyk/ttk-tukl ttk-tukl
+cd ttk-tukl
+// checkout your branch
+git checkout road
+// create and enter build folder
+mkdir build
+cd build
+// configure build
+ccmake ..
+set the following options:
+CMAKE_INSTALL_PREFIX = pathToYourTTKRepo/install
+ParaView_DIR = pathToYourParaViewRepo/install/lib/cmake/paraview-5.7
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
