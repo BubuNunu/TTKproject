@@ -101,6 +101,10 @@ ccmake ..
 set the following options:
 CMAKE_INSTALL_PREFIX = pathToYourTTKRepo/install
 ParaView_DIR = pathToYourParaViewRepo/install/lib/cmake/paraview-5.7
+//////bugs
+//install boost
+sudo apt-get install libboost-all-dev
+
 </pre>
 
 
