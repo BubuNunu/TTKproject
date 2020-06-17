@@ -22,3 +22,11 @@ core/base/EventDataConverter.cpp
  // clone the existing one "HelloWorld" to learn. under "ttk-tukl" folder.
  ./scripts/cloneTTKmodule.sh HelloWorld EventDataConverter
  </pre>
+ 
+ 4. use script to run and test the new module
+ <pre>
+ //under built folder. 
+ ccmake ..
+ make -j35 install
+ ./standalone/GenericScript/cmd/ttkGenericScriptCmd 
+ </pre>
