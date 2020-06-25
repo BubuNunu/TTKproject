@@ -28,7 +28,8 @@ core/base/EventDataConverter.cpp
  //under built folder. 
  ccmake ..
  make -j35 install
- ./standalone/GenericScript/cmd/ttkGenericScriptCmd 
+ // go to the install folder to run the debugging script. Under the build folder
+ ../install/bin/ttkGenericScriptCmd 
  </pre>
 
 5.open paraview to  call the ttk module
