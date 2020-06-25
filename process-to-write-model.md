@@ -30,3 +30,10 @@ core/base/EventDataConverter.cpp
  make -j35 install
  ./standalone/GenericScript/cmd/ttkGenericScriptCmd 
  </pre>
+
+5.open paraview to  call the ttk module
+<pre>
+// go to Documents/projects/hotspot/paraview/build/bin
+cd Documents/projects/hotspot/paraview/build/bin
+./paraview
+</pre>
