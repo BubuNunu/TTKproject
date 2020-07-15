@@ -3,4 +3,4 @@
 - 2> convert the lines of osm data to geojson data.
 - 3> roadDataConverter to conver the geojson to the format in ttk. save the point and lines and the property of the line.
 - 4> use ttk pipline/ttk extract to filter road data based on the property: the final road network contians: 
-![Image of attr1](../images/attribute1.png)
+<img src = "./images/attribute1.png" width = 100> <img src = "./images/attr2.png" width = 100>
