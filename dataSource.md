@@ -4,3 +4,8 @@
 - 3> roadDataConverter to conver the geojson to the format in ttk. save the point and lines and the property of the line.
 - 4> use ttk pipline/ttk extract to filter road data based on the property: the final road network contians: </br>
 <img src = "./images/clipedData1.png" width = 100> <img src = "./images/clipedData2.png" width = 100>
+
+2. crime data:
+Seattle Crime: seattle police data.gz
+Chicago Crime: old server database
+Purdue Crime: old server database
