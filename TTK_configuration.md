@@ -244,3 +244,5 @@ ParaView_DIR = pathToYourParaViewRepo/install/lib/cmake/paraview-5.7
 Qt5_DIR = 
 Python3 = e
  </pre>
+#### 19: clean build of ttk and reConfiguration
+the package of ttkproject.os is in the intall2 of ttk. 
